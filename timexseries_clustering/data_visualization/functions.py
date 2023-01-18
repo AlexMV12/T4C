@@ -6,16 +6,14 @@ import matplotlib.pyplot as plt
 import numpy as np
 from typing import List
 
-import dash_core_components as dcc
-import dash_html_components as html
+from dash import dcc
+from dash import html
 from plotly.subplots import make_subplots
 import networkx as nx
 import dash_bootstrap_components as dbc
 
 from colorhash import ColorHash
-from statsmodels.tsa.seasonal import seasonal_decompose
 
-from timexseries_clustering.timeseries_container import TimeSeriesContainer
 from timexseries_clustering.data_clustering.models.predictor import SingleResult, ModelResult
 from timexseries_clustering.data_clustering.transformation import transformation_factory
 
